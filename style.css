@@ -1,0 +1,228 @@
+*{
+    margin:0;
+    padding: 0;
+}
+html, body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: transparent;
+    -webkit-background-clip: text;
+	background-clip: text;
+    background-image: linear-gradient(90deg, rgb(9,169,171) 0%, rgb(5,200,168) 100%);
+}
+
+.firstBlock_invitation{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5%;
+    
+}
+.firstBlock_invitation span{
+    position: relative;
+    font-family: Signika Negative;
+    font-weight: 700;
+    font-size: clamp(1.5rem, 5vw, 20rem);
+    display: inline;
+    
+}
+.name{
+    color: transparent;
+    -webkit-background-clip: text;
+	background-clip: text;
+    background-image: linear-gradient(90deg, rgb(9,169,171) 0%, rgb(5,200,168) 100%);
+}
+
+.button_with_borders{
+    display: inline-block;
+    margin-top: 1%;
+    width: 10%;
+    min-width: 80px;
+    height: 50px;
+    background:none;
+    border: 4px solid green;
+    border-image: linear-gradient(to right top, rgba(0,237,239,100) 0%, rgba(0,233,206,100) 100%) ;
+    border-image-slice: 1;
+    cursor: pointer;
+    color: transparent;
+    -webkit-background-clip: text;
+	background-clip: text;
+    background-image: linear-gradient(90deg, rgb(9, 169, 171) 0%, rgb(5,200,168) 100%);
+    position: relative;
+    font-family: Signika Negative;
+    font-weight: 500;
+    font-size: clamp(0.8rem, 1vw, 3rem);
+    white-space: nowrap;
+    display: inline;
+    z-index: 2;
+}
+
+
+.secondBlock_gradient{
+    
+    display: flex;
+    flex-direction: row;
+    background-image: url("images/background.png");
+    width: 100%;
+    height: 43vw;
+    min-height: 420px;
+    background-size: 100% clamp(420px, 43vw, 50vw);
+    background-repeat: no-repeat;
+   
+}
+
+.MyImage{
+    margin-left: 5%;
+    margin-top: 5%;
+    
+    display: block;
+    width: 25vw;
+    height: 30vw;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.textMain_block_wrapper{
+    color:#fff;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 2%;    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: Signika Negative;
+    font-weight: 500;
+    font-size: clamp(0.8rem, 1.3vw, 3rem);
+    
+    
+}
+.aboutMe_textMain{
+    margin-bottom: 7%;
+    font-family: Signika Negative;
+    font-weight: 800;
+    font-size: clamp(0.8rem, 3vw, 10rem);
+}
+.Skills_textMain{
+    margin-top: 3%;
+    margin-bottom: 1%;
+    
+}
+
+.Projects_block{
+    margin-top: 3%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.Projects_header{ 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: source Code pro;
+    font-weight: 500;
+    font-size: clamp(2rem, 4vw, 6rem);   
+}
+
+
+.item_portfolio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+    
+}
+.item_text{
+    
+
+    position: relative;
+    width: 30%;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    
+
+    font-family: source Code pro;
+    font-weight: 500;
+    font-size: clamp(0.5rem, 1vw, 3rem);   
+    
+}
+.header_item{
+    font-family: source Code pro;
+    font-weight: 700;
+    font-size: clamp(0.7rem, 1.3vw, 3rem);  
+    margin-bottom: 2%;
+
+}
+.item_description{
+    font-family: source Code pro;
+    font-weight: 500;
+    font-size: clamp(0.5rem, 1vw, 3rem);  
+    margin-bottom: 2%;
+
+}
+.button_wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+
+    
+}
+.See_Live_item{
+    width: 25%;
+    height: 50px;
+}
+.Source_Code_item{
+    border: none;
+    background:none;
+    cursor: pointer;
+    color: transparent;
+    -webkit-background-clip: text;
+	background-clip: text;
+    background-image: linear-gradient(90deg, rgb(9, 169, 171) 0%, rgb(5,200,168) 100%);
+    font-size: clamp(1rem, 1vw, 3rem);
+}
+.item_image{
+    width: 40%;
+    position: relative;
+    min-width: 190px;
+    border-radius: 7px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    height: 40%;
+}
+
+.footer{
+    display: block;
+    margin-bottom: 0;
+    margin-top: 15%;
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+@media screen and (max-width: 650px) {
+    .secondBlock_gradient{
+        width: 100%;
+        height: 43vw;
+        min-height: 250px;
+        background-size: 100% clamp(250px, 43vw, 50vw);   
+    }
+    .button_with_borders{   
+        min-width: 80px;
+        height: 40px;
+    }
+  }
+
+
+
+
+
